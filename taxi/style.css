@@ -1,0 +1,59 @@
+@keyframes run {
+  100% {
+    background-position: -5000px;
+  }
+}
+
+body {
+  background-color: #333;
+}
+.wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.world {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 50% / 25%;
+  overflow: hidden;
+}
+
+.ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  animation-name: run;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ground_1 {
+  background-image: url(images/1.png);
+  animation-duration: 5s;
+}
+.ground_2 {
+  background-image: url(images/2.png);
+  animation-duration: 10s;
+}
+.ground_3 {
+  background-image: url(images/3.png);
+  animation-duration: 20s;
+}
+.ground_4 {
+  background-image: url(images/4.png);
+  animation-duration: 40s;
+}
+
+.taxi {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  margin-left: -150px;
+}
